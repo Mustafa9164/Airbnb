@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+
 @Entity
 @Table(name = "availability")
 @NoArgsConstructor
@@ -21,7 +23,7 @@ public class Availability {
 
 
     @Column(name = "date", nullable = false)
-    private Data date;
+    private Date date;
 
     @Column
     private Long bookingId;//nullable if false
